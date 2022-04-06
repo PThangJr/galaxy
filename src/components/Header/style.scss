@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+  position: relative;
+  margin-bottom: 161px;
+  font-family: "BarlowCondense";
+  font-weight: 600;
+  .contain {
+  }
+  &-logo {
+    margin-left: 57px;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 200px;
+    max-width: 1130px;
+    &-item {
+      &:not(:last-child) {
+        margin-right: 115px;
+      }
+      &__link {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: "UTMNeutra";
+      }
+    }
+  }
+  .account {
+    display: flex;
+    align-items: center;
+    &-info {
+      display: flex;
+      align-items: center;
+      height: 38px;
+      border-radius: 100px;
+      background: rgba(0, 200, 255, 0.2);
+      position: relative;
+      padding: 7px 5px;
+      &__name {
+        padding: 0 20px;
+      }
+      &:hover {
+        .account-info-setting {
+          display: block;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        z-index: 1;
+      }
+
+      &__img {
+        // margin-right: 17px;
+      }
+
+      &-setting {
+        position: absolute;
+        // display: none;
+        background: rgba(255, 255, 255, 0.2);
+        top: calc(100% + 9px);
+        min-width: 100%;
+        z-index: 10;
+        display: none;
+        border-radius: 19px;
+        &-item {
+          position: relative;
+          &__link {
+            padding: 11px 0 11px 28px;
+            img {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-border-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% - 10px);
+    width: 100%;
+  }
+}

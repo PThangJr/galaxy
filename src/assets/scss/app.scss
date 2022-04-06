@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "UTMNeutra";
+  src: url("../fonts/UTMNeutra.ttf");
+  line-height: 1;
+}
+@font-face {
+  font-family: "BarlowCondensed";
+  src: url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+}
+:root {
+  --color-white: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  // font-family: "UTMNeutra";
+  font-family: inherit;
+  letter-spacing: 1.5px;
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+body {
+  color: var(--color-white);
+  font-family: "UTMNeutra", sans-serif;
+  letter-spacing: 1.5px;
+}
+.wrapper {
+  // max-width: 1920px;
+  background: url("../images/background/earth.png");
+  min-height: 100vh;
+  background-size: cover !important;
+}
+
+.main {
+  // margin-left: 432px;
+  // width: 1700px;
+  // align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // max-width: 1450px;
+  // max-height: 507px;
+  min-height: calc(100% - 75px - 94px);
+  margin: 0 auto;
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 1320px;
+  }
+  .contain {
+  }
+  .sale {
+    margin-right: 83px;
+  }
+}
+.btn {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+}
+.container {
+  // max-width: 1324px;
+  // margin: 0 auto;
+}
+.contain {
+  // max-width: 1700px;
+}
+.m-auto {
+  margin: 0 auto;
+}

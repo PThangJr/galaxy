@@ -1,0 +1,53 @@
+.count-down {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &-header {
+    margin-bottom: 40px;
+    &__heading {
+      margin-bottom: 12px;
+    }
+    &__desc {
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+  }
+  &-control {
+    display: flex;
+    margin-bottom: 42px;
+  }
+  &-item {
+    width: 135px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url("./images/background-item.png") no-repeat;
+    &__number {
+      font-size: 75px;
+      line-height: 1;
+    }
+    &__text {
+      font-size: 26px;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .deadline {
+    text-align: center;
+    text-transform: uppercase;
+    &-date {
+      font-size: 48px;
+    }
+    &-desc {
+      font-size: 28px;
+    }
+  }
+}

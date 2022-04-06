@@ -1,0 +1,107 @@
+.sale {
+  width: 390px;
+  // border: 1px solid;
+  position: relative;
+  padding: 15px;
+  background: url("./images/sale-border.png"),
+    url("./images/sale-border-reverse.png"), rgba(0, 228, 255, 0.1);
+  background-position: top left, bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &-border {
+    position: absolute;
+    width: 100%;
+    // z-index: -1;
+    &--top {
+      top: -3px;
+      left: 0;
+    }
+    &--bottom {
+      bottom: -5px;
+      left: 0;
+    }
+  }
+  &-top {
+    img {
+      margin: 0 auto;
+      display: block;
+      // padding-top: 10px;
+      margin-bottom: 28px;
+    }
+  }
+  .contain {
+    padding: 0 16px;
+  }
+
+  &-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    img {
+      // padding: 14px 0 17px 25px;
+      font-size: 42px;
+    }
+    button {
+      width: 112px;
+      height: 32px;
+      background: rgba(0, 198, 255, 0.2);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  &-price {
+    margin-bottom: 17px;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    img {
+      margin-right: 9px;
+    }
+  }
+  &-desc {
+    font-size: 16px;
+    line-height: calc(17.5px / 16px);
+    margin-bottom: 16px;
+    // width: 311px;
+    // max-width: 312px;
+    text-transform: none;
+    font-family: "BarlowCondensed";
+    font-weight: 200;
+    font-style: normal;
+  }
+  &-progress {
+    position: relative;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    font-weight: bold;
+
+    &__percent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background: #3cc3ef;
+    }
+  }
+  &-progress-info {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  &-bottom {
+    button {
+      width: 100%;
+      min-height: 63px;
+      font-weight: bold;
+      font-size: 35px;
+      text-transform: uppercase;
+      // padding: 19px 0;
+      background: url("./images/background-buy.png") no-repeat;
+      &.active {
+        background: url("./images/background-buy-active.png") no-repeat;
+      }
+    }
+  }
+}
